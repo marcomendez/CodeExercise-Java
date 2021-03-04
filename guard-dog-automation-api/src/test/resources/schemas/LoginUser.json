@@ -1,0 +1,41 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Login user information",
+  "description": "Information of a user when this is logged in",
+  "type": "object",
+  "properties": {
+    "kind": {
+      "description": "The request identify",
+      "type": "string"
+    },
+    "localId": {
+      "description": "Local id identify",
+      "type": "string"
+    },
+    "email": {
+      "description": "user Email",
+      "type": "string"
+    },
+    "displayName": {
+      "description": "user Name",
+      "type": "string"
+    },
+    "idToken": {
+      "description": "user token",
+      "type": "string"
+    },
+    "registered": {
+      "description": "check if user is registered",
+      "type": "boolean"
+    },
+    "refreshToken": {
+      "description": "token",
+      "type": "string"
+    },
+    "expiresIn": {
+      "description": "expiration time",
+      "type": "string"
+    }
+  },
+  "required": ["kind", "localId", "email", "displayName","idToken", "registered","refreshToken", "expiresIn"]
+}

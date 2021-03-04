@@ -1,0 +1,51 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "device_name": {
+      "type": "string"
+    },
+    "items": {
+      "type": "array",
+      "interfaces": [
+        {
+          "type": "string"
+        }
+      ]
+    },
+    "private": {
+      "type": "string"
+    },
+    "public": {
+      "type": "string"
+    },
+    "serial_number": {
+      "type": "string"
+    },
+    "id": {
+      "type": "string"
+    },
+    "monitoring": {
+      "type": "boolean"
+    },
+
+    "timestamp": {
+      "_nanoseconds": {
+        "type": "integer"
+      },
+      "_seconds": {
+        "type": "integer"
+      }
+    }
+  },
+  "required": [
+    "device_name",
+    "interfaces",
+    "private",
+    "public",
+    "serial_number",
+    "id",
+    "monitoring",
+    "timestamp"
+  ]
+}

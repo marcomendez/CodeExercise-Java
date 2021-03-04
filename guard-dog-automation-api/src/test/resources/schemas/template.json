@@ -1,0 +1,834 @@
+{
+  "GDS_113": {
+    "data": {
+      "id": "GDS_113",
+      "private": "192.168.1.7",
+      "device_name": "GDS_113_Name9",
+      "timestamp": {
+        "_seconds": 1613396546,
+        "_nanoseconds": 93620000
+      },
+      "device": "GDS_113",
+      "monitoring": true,
+      "public": "181.188.162.65",
+      "interfaces": [
+        "eth0",
+        "lo",
+        "wlan0",
+        "wlan1"
+      ],
+      "serial_number": "12345678"
+    },
+    "threat": 2,
+    "wireless": {
+      "9e:7b:ef:f9:85:03": {
+        "ssid": "DIRECT-03-HP ENVY 5000 series",
+        "clients": [],
+        "mac": "9e:7b:ef:f9:85:03",
+        "ip": null,
+        "vendor": null,
+        "encryprion": null,
+        "encrypted": null,
+        "channel": "7",
+        "frequency": null,
+        "quality": null,
+        "signal": null
+      },
+      "10:0c:6b:e0:b4:7b": {
+        "ssid": "MitchellBoys",
+        "clients": [
+          {
+            "bssid": "06:CF:9C:AE:F1:C6",
+            "packets": "2",
+            "dbm": "0",
+            "vendor": null
+          },
+          {
+            "bssid": "58:82:A8:5E:F6:8F",
+            "packets": "3",
+            "dbm": "-87",
+            "vendor": null
+          }
+        ],
+        "mac": "10:0c:6b:e0:b4:7b",
+        "ip": null,
+        "vendor": null,
+        "encryprion": "wpa2",
+        "encrypted": true,
+        "channel": "2",
+        "frequency": "2.417 GHz",
+        "quality": "31/70",
+        "signal": -79
+      },
+      "3c:7c:3f:43:a8:60": {
+        "ssid": "GBHome",
+        "clients": [],
+        "mac": "3c:7c:3f:43:a8:60",
+        "ip": null,
+        "vendor": null,
+        "encryprion": null,
+        "encrypted": null,
+        "channel": "4",
+        "frequency": null,
+        "quality": null,
+        "signal": null
+      }
+    },
+    "network": {
+      "192.168.1.1": {
+        "mac": "8c:3b:ad:d3:b8:05",
+        "ports": [],
+        "ip": "192.168.1.1",
+        "hostname": "www.routerlogin.com",
+        "vendor": null
+      },
+      "192.168.1.21": {
+        "mac": "0c:c4:7a:ca:b4:19",
+        "ports": [],
+        "ip": "192.168.1.21",
+        "hostname": [],
+        "vendor": null
+      },
+      "192.168.1.203": {
+        "mac": "08:a6:bc:b7:c2:0f",
+        "ports": [],
+        "ip": "192.168.1.203",
+        "hostname": [],
+        "vendor": null
+      },
+      "192.168.1.204": {
+        "mac": "48:5a:3f:76:a7:9a",
+        "ports": [],
+        "ip": "192.168.1.204",
+        "hostname": [],
+        "vendor": null
+      },
+      "192.168.1.207": {
+        "mac": null,
+        "ports": [
+          {
+            "port": "22",
+            "service": "ssh"
+          },
+          {
+            "port": "8000",
+            "service": "http"
+          }
+        ],
+        "ip": "192.168.1.207",
+        "hostname": [],
+        "vendor": null
+      },
+      "stats": {
+        "mac": null,
+        "ports": [],
+        "ip": "stats",
+        "hostname": [],
+        "vendor": null
+      },
+      "192.168.1.212": {
+        "mac": "de:3e:4c:0f:60:79",
+        "ports": [],
+        "ip": "192.168.1.212",
+        "hostname": [],
+        "vendor": null
+      },
+      "192.168.1.5": {
+        "mac": "14:10:9f:85:63:dc",
+        "ports": [],
+        "ip": "192.168.1.5",
+        "hostname": [],
+        "vendor": null
+      },
+      "192.168.1.214": {
+        "mac": "72:45:d1:c4:8d:12",
+        "ports": [],
+        "ip": "192.168.1.214",
+        "hostname": [],
+        "vendor": null
+      },
+      "192.168.1.208": {
+        "mac": "86:03:89:4d:4c:8f",
+        "ports": [],
+        "ip": "192.168.1.208",
+        "hostname": [],
+        "vendor": null
+      },
+      "192.168.1.2": {
+        "mac": "da:85:07:95:b2:7d",
+        "ports": [],
+        "ip": "192.168.1.2",
+        "hostname": [],
+        "vendor": null
+      }
+    },
+    "error": {
+      "GDS_113": []
+    },
+    "status": {
+      "GDS_113": {
+        "services": {
+          "chef": "RUNNING",
+          "flask": "RUNNING",
+          "init": "RUNNING",
+          "iot-core": "RUNNING",
+          "log_push_chef": "RUNNING",
+          "log_push_init": "RUNNING",
+          "tuxtunnel": "RUNNING"
+        },
+        "interfaces": {
+          "eth0": "192.168.1.207",
+          "lo": "127.0.0.1",
+          "wlan0": null,
+          "wlan1": null
+        }
+      }
+    },
+    "main_threat": [
+      6.8,
+      {
+        "id": "CVE-2020-15778",
+        "title": "CVE-2020-15778",
+        "description": "scp in OpenSSH through 8.3p1 allows command injection in the scp.c toremote function, as demonstrated by backtick characters in the destination argument. NOTE: the vendor reportedly has stated that they intentionally omit validation of \"anomalous argument transfers\" because that could \"stand a great chance of breaking existing workflows.\"",
+        "link": "https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2020-15778",
+        "software": [
+          {
+            "name": "openbsd openssh",
+            "version": "8.3 to 8.3"
+          }
+        ],
+        "score": 6.8,
+        "ip": "192.168.1.207",
+        "port": "22"
+      }
+    ],
+    "threats_sorted": [
+      [
+        6.8,
+        {
+          "id": "CVE-2020-15778",
+          "title": "CVE-2020-15778",
+          "description": "scp in OpenSSH through 8.3p1 allows command injection in the scp.c toremote function, as demonstrated by backtick characters in the destination argument. NOTE: the vendor reportedly has stated that they intentionally omit validation of \"anomalous argument transfers\" because that could \"stand a great chance of breaking existing workflows.\"",
+          "link": "https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2020-15778",
+          "software": [
+            {
+              "name": "openbsd openssh",
+              "version": "8.3 to 8.3"
+            }
+          ],
+          "score": 6.8,
+          "ip": "192.168.1.207",
+          "port": "22"
+        }
+      ],
+      [
+        4.4,
+        {
+          "id": "CVE-2019-16905",
+          "title": "CVE-2019-16905",
+          "description": "OpenSSH 7.7 through 7.9 and 8.x before 8.1, when compiled with an experimental key type, has a pre-authentication integer overflow if a client or server is configured to use a crafted XMSS key. This leads to memory corruption and local code execution because of an error in the XMSS key parsing algorithm. NOTE: the XMSS implementation is considered experimental in all released OpenSSH versions, and there is no supported way to enable it when building portable OpenSSH.",
+          "link": "https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2019-16905",
+          "software": [
+            {
+              "name": "openbsd openssh",
+              "version": "8.1 to 7.9"
+            }
+          ],
+          "score": 4.4,
+          "ip": "192.168.1.207",
+          "port": "22"
+        }
+      ],
+      [
+        4.3,
+        {
+          "id": "CVE-2020-14145",
+          "title": "CVE-2020-14145",
+          "description": "The client side in OpenSSH 5.7 through 8.4 has an Observable Discrepancy leading to an information leak in the algorithm negotiation. This allows man-in-the-middle attackers to target initial connection attempts (where no host key for the server has been cached by the client).",
+          "link": "https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2020-14145",
+          "software": [
+            {
+              "name": "netapp steelstore cloud integrated storage",
+              "version": "- to -"
+            },
+            {
+              "name": "netapp ontap select deploy administration utility",
+              "version": "- to -"
+            },
+            {
+              "name": "netapp hci compute node",
+              "version": "- to -"
+            },
+            {
+              "name": "netapp aff a700s firmware",
+              "version": "- to -"
+            },
+            {
+              "name": "netapp hci storage node",
+              "version": "- to -"
+            },
+            {
+              "name": "netapp active iq unified manager",
+              "version": "* to *"
+            },
+            {
+              "name": "netapp solidfire",
+              "version": "- to -"
+            },
+            {
+              "name": "openbsd openssh",
+              "version": "8.4 to 8.4"
+            },
+            {
+              "name": "netapp hci management node",
+              "version": "- to -"
+            }
+          ],
+          "score": 4.3,
+          "ip": "192.168.1.207",
+          "port": "22"
+        }
+      ]
+    ],
+    "vulnerability": {
+      "192.168.1.207": {
+        "22": {
+          "cve": {
+            "software": [
+              {
+                "id": "CVE-2019-16905",
+                "title": "CVE-2019-16905",
+                "description": "OpenSSH 7.7 through 7.9 and 8.x before 8.1, when compiled with an experimental key type, has a pre-authentication integer overflow if a client or server is configured to use a crafted XMSS key. This leads to memory corruption and local code execution because of an error in the XMSS key parsing algorithm. NOTE: the XMSS implementation is considered experimental in all released OpenSSH versions, and there is no supported way to enable it when building portable OpenSSH.",
+                "link": "https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2019-16905",
+                "software": [
+                  {
+                    "name": "openbsd openssh",
+                    "version": "8.1 to 7.9"
+                  }
+                ],
+                "score": 4.4,
+                "ip": "192.168.1.207",
+                "port": "22"
+              },
+              {
+                "id": "CVE-2020-14145",
+                "title": "CVE-2020-14145",
+                "description": "The client side in OpenSSH 5.7 through 8.4 has an Observable Discrepancy leading to an information leak in the algorithm negotiation. This allows man-in-the-middle attackers to target initial connection attempts (where no host key for the server has been cached by the client).",
+                "link": "https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2020-14145",
+                "software": [
+                  {
+                    "name": "netapp steelstore cloud integrated storage",
+                    "version": "- to -"
+                  },
+                  {
+                    "name": "netapp ontap select deploy administration utility",
+                    "version": "- to -"
+                  },
+                  {
+                    "name": "netapp hci compute node",
+                    "version": "- to -"
+                  },
+                  {
+                    "name": "netapp aff a700s firmware",
+                    "version": "- to -"
+                  },
+                  {
+                    "name": "netapp hci storage node",
+                    "version": "- to -"
+                  },
+                  {
+                    "name": "netapp active iq unified manager",
+                    "version": "* to *"
+                  },
+                  {
+                    "name": "netapp solidfire",
+                    "version": "- to -"
+                  },
+                  {
+                    "name": "openbsd openssh",
+                    "version": "8.4 to 8.4"
+                  },
+                  {
+                    "name": "netapp hci management node",
+                    "version": "- to -"
+                  }
+                ],
+                "score": 4.3,
+                "ip": "192.168.1.207",
+                "port": "22"
+              },
+              {
+                "id": "CVE-2020-15778",
+                "title": "CVE-2020-15778",
+                "description": "scp in OpenSSH through 8.3p1 allows command injection in the scp.c toremote function, as demonstrated by backtick characters in the destination argument. NOTE: the vendor reportedly has stated that they intentionally omit validation of \"anomalous argument transfers\" because that could \"stand a great chance of breaking existing workflows.\"",
+                "link": "https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2020-15778",
+                "software": [
+                  {
+                    "name": "openbsd openssh",
+                    "version": "8.3 to 8.3"
+                  }
+                ],
+                "score": 6.8,
+                "ip": "192.168.1.207",
+                "port": "22"
+              }
+            ],
+            "cpe": []
+          },
+          "vendor": null,
+          "ip": "192.168.1.207",
+          "mac": null,
+          "product": "OpenSSH",
+          "cpe": [
+            "cpe:/a:openbsd:openssh:8.2p1",
+            "cpe:/o:linux:linux_kernel"
+          ],
+          "version": "8.2p1 Ubuntu 4ubuntu0.1",
+          "port": "22"
+        },
+        "8000": {
+          "cve": {
+            "software": [],
+            "cpe": []
+          },
+          "vendor": null,
+          "ip": "192.168.1.207",
+          "mac": null,
+          "product": "Gunicorn",
+          "cpe": [
+            "cpe:/a:gunicorn:gunicorn:20.0.4"
+          ],
+          "version": "20.0.4",
+          "port": "8000"
+        }
+      }
+    },
+    "threats": {
+      "192.168.1.207": {
+        "22": [
+          "Ip: 192.168.1.207 (None) has exposed port 22 running OpenSSH\n<a href=\"https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2019-16905\">CVE-2019-16905</a> Title: CVE-2019-16905 </br> Score: 4.4 </br> Description: OpenSSH 7.7 through 7.9 and 8.x before 8.1, when compiled with an experimental key type, has a pre-authentication integer overflow if a client or server is configured to use a crafted XMSS key. This leads to memory corruption and local code execution because of an error in the XMSS key parsing algorithm. NOTE: the XMSS implementation is considered experimental in all released OpenSSH versions, and there is no supported way to enable it when building portable OpenSSH.\n<a href=\"https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2020-14145\">CVE-2020-14145</a> Title: CVE-2020-14145 </br> Score: 4.3 </br> Description: The client side in OpenSSH 5.7 through 8.4 has an Observable Discrepancy leading to an information leak in the algorithm negotiation. This allows man-in-the-middle attackers to target initial connection attempts (where no host key for the server has been cached by the client).\n<a href=\"https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2020-15778\">CVE-2020-15778</a> Title: CVE-2020-15778 </br> Score: 6.8 </br> Description: scp in OpenSSH through 8.3p1 allows command injection in the scp.c toremote function, as demonstrated by backtick characters in the destination argument. NOTE: the vendor reportedly has stated that they intentionally omit validation of \"anomalous argument transfers\" because that could \"stand a great chance of breaking existing workflows.\""
+        ],
+        "8000": [
+          "Ip: 192.168.1.207 (None) has exposed port 8000 running Gunicorn"
+        ]
+      }
+    },
+    "atttacks": []
+  },
+  "GDS_112": {
+    "data": {
+      "id": "GDS_113",
+      "private": "192.168.1.7",
+      "device_name": "GDS_113_Name9",
+      "timestamp": {
+        "_seconds": 1613396546,
+        "_nanoseconds": 93620000
+      },
+      "device": "GDS_113",
+      "monitoring": true,
+      "public": "181.188.162.65",
+      "interfaces": [
+        "eth0",
+        "lo",
+        "wlan0",
+        "wlan1"
+      ],
+      "serial_number": "12345678"
+    },
+    "threat": 2,
+    "wireless": {
+      "9e:7b:ef:f9:85:03": {
+        "ssid": "DIRECT-03-HP ENVY 5000 series",
+        "clients": [],
+        "mac": "9e:7b:ef:f9:85:03",
+        "ip": null,
+        "vendor": null,
+        "encryprion": null,
+        "encrypted": null,
+        "channel": "7",
+        "frequency": null,
+        "quality": null,
+        "signal": null
+      },
+      "10:0c:6b:e0:b4:7b": {
+        "ssid": "MitchellBoys",
+        "clients": [
+          {
+            "bssid": "06:CF:9C:AE:F1:C6",
+            "packets": "2",
+            "dbm": "0",
+            "vendor": null
+          },
+          {
+            "bssid": "58:82:A8:5E:F6:8F",
+            "packets": "3",
+            "dbm": "-87",
+            "vendor": null
+          }
+        ],
+        "mac": "10:0c:6b:e0:b4:7b",
+        "ip": null,
+        "vendor": null,
+        "encryprion": "wpa2",
+        "encrypted": true,
+        "channel": "2",
+        "frequency": "2.417 GHz",
+        "quality": "31/70",
+        "signal": -79
+      },
+      "3c:7c:3f:43:a8:60": {
+        "ssid": "GBHome",
+        "clients": [],
+        "mac": "3c:7c:3f:43:a8:60",
+        "ip": null,
+        "vendor": null,
+        "encryprion": null,
+        "encrypted": null,
+        "channel": "4",
+        "frequency": null,
+        "quality": null,
+        "signal": null
+      }
+    },
+    "network": {
+      "192.168.1.1": {
+        "mac": "8c:3b:ad:d3:b8:05",
+        "ports": [],
+        "ip": "192.168.1.1",
+        "hostname": "www.routerlogin.com",
+        "vendor": null
+      },
+      "192.168.1.21": {
+        "mac": "0c:c4:7a:ca:b4:19",
+        "ports": [],
+        "ip": "192.168.1.21",
+        "hostname": [],
+        "vendor": null
+      },
+      "192.168.1.203": {
+        "mac": "08:a6:bc:b7:c2:0f",
+        "ports": [],
+        "ip": "192.168.1.203",
+        "hostname": [],
+        "vendor": null
+      },
+      "192.168.1.204": {
+        "mac": "48:5a:3f:76:a7:9a",
+        "ports": [],
+        "ip": "192.168.1.204",
+        "hostname": [],
+        "vendor": null
+      },
+      "192.168.1.207": {
+        "mac": null,
+        "ports": [
+          {
+            "port": "22",
+            "service": "ssh"
+          },
+          {
+            "port": "8000",
+            "service": "http"
+          }
+        ],
+        "ip": "192.168.1.207",
+        "hostname": [],
+        "vendor": null
+      },
+      "stats": {
+        "mac": null,
+        "ports": [],
+        "ip": "stats",
+        "hostname": [],
+        "vendor": null
+      },
+      "192.168.1.212": {
+        "mac": "de:3e:4c:0f:60:79",
+        "ports": [],
+        "ip": "192.168.1.212",
+        "hostname": [],
+        "vendor": null
+      },
+      "192.168.1.5": {
+        "mac": "14:10:9f:85:63:dc",
+        "ports": [],
+        "ip": "192.168.1.5",
+        "hostname": [],
+        "vendor": null
+      },
+      "192.168.1.214": {
+        "mac": "72:45:d1:c4:8d:12",
+        "ports": [],
+        "ip": "192.168.1.214",
+        "hostname": [],
+        "vendor": null
+      },
+      "192.168.1.208": {
+        "mac": "86:03:89:4d:4c:8f",
+        "ports": [],
+        "ip": "192.168.1.208",
+        "hostname": [],
+        "vendor": null
+      },
+      "192.168.1.2": {
+        "mac": "da:85:07:95:b2:7d",
+        "ports": [],
+        "ip": "192.168.1.2",
+        "hostname": [],
+        "vendor": null
+      }
+    },
+    "error": {
+      "GDS_113": []
+    },
+    "status": {
+      "GDS_113": {
+        "services": {
+          "chef": "RUNNING",
+          "flask": "RUNNING",
+          "init": "RUNNING",
+          "iot-core": "RUNNING",
+          "log_push_chef": "RUNNING",
+          "log_push_init": "RUNNING",
+          "tuxtunnel": "RUNNING"
+        },
+        "interfaces": {
+          "eth0": "192.168.1.207",
+          "lo": "127.0.0.1",
+          "wlan0": null,
+          "wlan1": null
+        }
+      }
+    },
+    "main_threat": [
+      6.8,
+      {
+        "id": "CVE-2020-15778",
+        "title": "CVE-2020-15778",
+        "description": "scp in OpenSSH through 8.3p1 allows command injection in the scp.c toremote function, as demonstrated by backtick characters in the destination argument. NOTE: the vendor reportedly has stated that they intentionally omit validation of \"anomalous argument transfers\" because that could \"stand a great chance of breaking existing workflows.\"",
+        "link": "https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2020-15778",
+        "software": [
+          {
+            "name": "openbsd openssh",
+            "version": "8.3 to 8.3"
+          }
+        ],
+        "score": 6.8,
+        "ip": "192.168.1.207",
+        "port": "22"
+      }
+    ],
+    "threats_sorted": [
+      [
+        6.8,
+        {
+          "id": "CVE-2020-15778",
+          "title": "CVE-2020-15778",
+          "description": "scp in OpenSSH through 8.3p1 allows command injection in the scp.c toremote function, as demonstrated by backtick characters in the destination argument. NOTE: the vendor reportedly has stated that they intentionally omit validation of \"anomalous argument transfers\" because that could \"stand a great chance of breaking existing workflows.\"",
+          "link": "https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2020-15778",
+          "software": [
+            {
+              "name": "openbsd openssh",
+              "version": "8.3 to 8.3"
+            }
+          ],
+          "score": 6.8,
+          "ip": "192.168.1.207",
+          "port": "22"
+        }
+      ],
+      [
+        4.4,
+        {
+          "id": "CVE-2019-16905",
+          "title": "CVE-2019-16905",
+          "description": "OpenSSH 7.7 through 7.9 and 8.x before 8.1, when compiled with an experimental key type, has a pre-authentication integer overflow if a client or server is configured to use a crafted XMSS key. This leads to memory corruption and local code execution because of an error in the XMSS key parsing algorithm. NOTE: the XMSS implementation is considered experimental in all released OpenSSH versions, and there is no supported way to enable it when building portable OpenSSH.",
+          "link": "https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2019-16905",
+          "software": [
+            {
+              "name": "openbsd openssh",
+              "version": "8.1 to 7.9"
+            }
+          ],
+          "score": 4.4,
+          "ip": "192.168.1.207",
+          "port": "22"
+        }
+      ],
+      [
+        4.3,
+        {
+          "id": "CVE-2020-14145",
+          "title": "CVE-2020-14145",
+          "description": "The client side in OpenSSH 5.7 through 8.4 has an Observable Discrepancy leading to an information leak in the algorithm negotiation. This allows man-in-the-middle attackers to target initial connection attempts (where no host key for the server has been cached by the client).",
+          "link": "https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2020-14145",
+          "software": [
+            {
+              "name": "netapp steelstore cloud integrated storage",
+              "version": "- to -"
+            },
+            {
+              "name": "netapp ontap select deploy administration utility",
+              "version": "- to -"
+            },
+            {
+              "name": "netapp hci compute node",
+              "version": "- to -"
+            },
+            {
+              "name": "netapp aff a700s firmware",
+              "version": "- to -"
+            },
+            {
+              "name": "netapp hci storage node",
+              "version": "- to -"
+            },
+            {
+              "name": "netapp active iq unified manager",
+              "version": "* to *"
+            },
+            {
+              "name": "netapp solidfire",
+              "version": "- to -"
+            },
+            {
+              "name": "openbsd openssh",
+              "version": "8.4 to 8.4"
+            },
+            {
+              "name": "netapp hci management node",
+              "version": "- to -"
+            }
+          ],
+          "score": 4.3,
+          "ip": "192.168.1.207",
+          "port": "22"
+        }
+      ]
+    ],
+    "vulnerability": {
+      "192.168.1.207": {
+        "22": {
+          "cve": {
+            "software": [
+              {
+                "id": "CVE-2019-16905",
+                "title": "CVE-2019-16905",
+                "description": "OpenSSH 7.7 through 7.9 and 8.x before 8.1, when compiled with an experimental key type, has a pre-authentication integer overflow if a client or server is configured to use a crafted XMSS key. This leads to memory corruption and local code execution because of an error in the XMSS key parsing algorithm. NOTE: the XMSS implementation is considered experimental in all released OpenSSH versions, and there is no supported way to enable it when building portable OpenSSH.",
+                "link": "https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2019-16905",
+                "software": [
+                  {
+                    "name": "openbsd openssh",
+                    "version": "8.1 to 7.9"
+                  }
+                ],
+                "score": 4.4,
+                "ip": "192.168.1.207",
+                "port": "22"
+              },
+              {
+                "id": "CVE-2020-14145",
+                "title": "CVE-2020-14145",
+                "description": "The client side in OpenSSH 5.7 through 8.4 has an Observable Discrepancy leading to an information leak in the algorithm negotiation. This allows man-in-the-middle attackers to target initial connection attempts (where no host key for the server has been cached by the client).",
+                "link": "https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2020-14145",
+                "software": [
+                  {
+                    "name": "netapp steelstore cloud integrated storage",
+                    "version": "- to -"
+                  },
+                  {
+                    "name": "netapp ontap select deploy administration utility",
+                    "version": "- to -"
+                  },
+                  {
+                    "name": "netapp hci compute node",
+                    "version": "- to -"
+                  },
+                  {
+                    "name": "netapp aff a700s firmware",
+                    "version": "- to -"
+                  },
+                  {
+                    "name": "netapp hci storage node",
+                    "version": "- to -"
+                  },
+                  {
+                    "name": "netapp active iq unified manager",
+                    "version": "* to *"
+                  },
+                  {
+                    "name": "netapp solidfire",
+                    "version": "- to -"
+                  },
+                  {
+                    "name": "openbsd openssh",
+                    "version": "8.4 to 8.4"
+                  },
+                  {
+                    "name": "netapp hci management node",
+                    "version": "- to -"
+                  }
+                ],
+                "score": 4.3,
+                "ip": "192.168.1.207",
+                "port": "22"
+              },
+              {
+                "id": "CVE-2020-15778",
+                "title": "CVE-2020-15778",
+                "description": "scp in OpenSSH through 8.3p1 allows command injection in the scp.c toremote function, as demonstrated by backtick characters in the destination argument. NOTE: the vendor reportedly has stated that they intentionally omit validation of \"anomalous argument transfers\" because that could \"stand a great chance of breaking existing workflows.\"",
+                "link": "https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2020-15778",
+                "software": [
+                  {
+                    "name": "openbsd openssh",
+                    "version": "8.3 to 8.3"
+                  }
+                ],
+                "score": 6.8,
+                "ip": "192.168.1.207",
+                "port": "22"
+              }
+            ],
+            "cpe": []
+          },
+          "vendor": null,
+          "ip": "192.168.1.207",
+          "mac": null,
+          "product": "OpenSSH",
+          "cpe": [
+            "cpe:/a:openbsd:openssh:8.2p1",
+            "cpe:/o:linux:linux_kernel"
+          ],
+          "version": "8.2p1 Ubuntu 4ubuntu0.1",
+          "port": "22"
+        },
+        "8000": {
+          "cve": {
+            "software": [],
+            "cpe": []
+          },
+          "vendor": null,
+          "ip": "192.168.1.207",
+          "mac": null,
+          "product": "Gunicorn",
+          "cpe": [
+            "cpe:/a:gunicorn:gunicorn:20.0.4"
+          ],
+          "version": "20.0.4",
+          "port": "8000"
+        }
+      }
+    },
+    "threats": {
+      "192.168.1.207": {
+        "22": [
+          "Ip: 192.168.1.207 (None) has exposed port 22 running OpenSSH\n<a href=\"https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2019-16905\">CVE-2019-16905</a> Title: CVE-2019-16905 </br> Score: 4.4 </br> Description: OpenSSH 7.7 through 7.9 and 8.x before 8.1, when compiled with an experimental key type, has a pre-authentication integer overflow if a client or server is configured to use a crafted XMSS key. This leads to memory corruption and local code execution because of an error in the XMSS key parsing algorithm. NOTE: the XMSS implementation is considered experimental in all released OpenSSH versions, and there is no supported way to enable it when building portable OpenSSH.\n<a href=\"https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2020-14145\">CVE-2020-14145</a> Title: CVE-2020-14145 </br> Score: 4.3 </br> Description: The client side in OpenSSH 5.7 through 8.4 has an Observable Discrepancy leading to an information leak in the algorithm negotiation. This allows man-in-the-middle attackers to target initial connection attempts (where no host key for the server has been cached by the client).\n<a href=\"https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2020-15778\">CVE-2020-15778</a> Title: CVE-2020-15778 </br> Score: 6.8 </br> Description: scp in OpenSSH through 8.3p1 allows command injection in the scp.c toremote function, as demonstrated by backtick characters in the destination argument. NOTE: the vendor reportedly has stated that they intentionally omit validation of \"anomalous argument transfers\" because that could \"stand a great chance of breaking existing workflows.\""
+        ],
+        "8000": [
+          "Ip: 192.168.1.207 (None) has exposed port 8000 running Gunicorn"
+        ]
+      }
+    },
+    "atttacks": []
+  }
+}
