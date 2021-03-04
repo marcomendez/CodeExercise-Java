@@ -24,6 +24,8 @@ jobs:
       run: cd ..
     - name: C2
       run: cd ..
+    - name: dir
+      run: dir
     - name: C3
       run: cd guard-dog-automation-api
       
