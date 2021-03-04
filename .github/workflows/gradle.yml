@@ -28,4 +28,4 @@ jobs:
       run: cd guard-dog-automation-api
       
     - name: Build with Gradle
-      run: ./gradlew build
+      run: gradlew build
