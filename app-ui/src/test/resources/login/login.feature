@@ -14,7 +14,7 @@ Feature: Login page
 
   @TC-04
   Scenario: TC-04 Verify that a user with valid credentials is able to access to the portal
-    When I set 'omar.ors@gmail.com' in Email
+    When I set 'marco@gmail.com' in Email
     And I set '1234567' in Password
     And I click Log in Button
     Then I verify that Welcome label field contains 'Welcome to Protective' on Dashboard page

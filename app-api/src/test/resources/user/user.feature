@@ -6,7 +6,7 @@ Feature: Login API
     And I set the following body
     """
      {
-     "email":"marco@guarddogsolutions.com",
+     "email":"marco@gmail.com",
      "password":"123456789",
      "returnSecureToken":true
      }
@@ -18,7 +18,7 @@ Feature: Login API
   Scenario: Validate Login Schema
     Then I should get status 200
     And I should get 'identitytoolkit#VerifyPasswordResponse' in 'kind' response field
-    And I should get 'marco@guarddogsolutions.com' in 'email' response field
+    And I should get 'marco@gmail.com' in 'email' response field
     And I should get 'stFtmPUMKZgQDNMzDNs1sn2J0go2' in 'localId' response field
     And I should get Boolean 'true' in 'registered' response field
     And I should get '3600' in 'expiresIn' response field
@@ -28,7 +28,7 @@ Feature: Login API
     {
     "kind": "identitytoolkit#VerifyPasswordResponse",
     "localId": "stFtmPUMKZgQDNMzDNs1sn2J0go2",
-    "email": "marco@guarddogsolutions.com",
+    "email": "marco@gmail.com",
     "displayName": "",
     "idToken": "[USER_TOKEN]",
     "registered": true,
@@ -50,9 +50,9 @@ Feature: Login API
     And I should get the following response body
     """
      {
-    "email": "marco@guarddogsolutions.com",
+    "email": "marco@gmail.com",
     "uid": "stFtmPUMKZgQDNMzDNs1sn2J0go2",
-    "company": "Avantica",
+    "company": "XXX",
     "first_name": "Marco",
     "last_name": "Mendez"
     }
